@@ -1,11 +1,11 @@
 # TCA9548A
 ![Version](https://img.shields.io/badge/Version-v1.0.0-green.svg)
 
-A library for the TCA9548A with Arduino devices.
+A library for the TCA9548A I2C multiplexer, for devices using the Arduino framework.
 
 ### Features
 ---
-* **Channels are l open until closed (multiple at once)**
+* **Channels are open until closed (multiple at once)**
 * Read / Write of control register
 * Close all / Open all
 * Accepts TwoWire instance
