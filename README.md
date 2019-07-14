@@ -5,7 +5,7 @@ A library for the TCA9548A with Arduino devices.
 
 ### Features
 ---
-* **Keeps channels open until they are closed**
+* **Channels are l open until closed (multiple at once)**
 * Read / Write of control register
 * Close all / Open all
 * Accepts TwoWire instance
