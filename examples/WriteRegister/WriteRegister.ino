@@ -16,7 +16,7 @@ void loop()
 {
   uint8_t buff = 0x00;
 
-  Serial.println("\n--- Calculate Adddress Byte (153) ---");
+  Serial.println("\n--- Calculate Channel Byte (153) ---");
 
   delay(500);
 
