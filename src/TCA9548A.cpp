@@ -8,14 +8,14 @@
 
 #include "TCA9548A.h"
 
+#define DEBUG 0  // Enable Debug Mode
+
 TCA9548A::TCA9548A(uint8_t address) : _address(address) {}
 
-void TCA9548A::begin(uint8_t sda, uint8_t sdl, TwoWire &inWire)
+void TCA9548A::begin(TwoWire &inWire)
 {
-    this->_sda = sda; 
-    this->_sdl = sdl;
     this->myWire = &inWire;
-    this->myWire->begin(_sda,_sdl);
+    this->myWire->begin();
 }
 
 void TCA9548A::openChannel(uint8_t channel)
@@ -81,7 +81,7 @@ void TCA9548A::write(uint8_t inData)
 uint8_t TCA9548A::read()
 {
     uint8_t buff = 0;
-    this->myWire->requestFrom((uint16_t)this->_address, (uint8_t)1, true);
+    this->myWire->requestFrom(this->_address, 1, true);
 
     if(!this->myWire->available())
         return 255;
