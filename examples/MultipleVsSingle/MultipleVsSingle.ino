@@ -5,7 +5,7 @@ TCA9548A I2CMux;     // Address can be passed into the constructor
 
 void setup() {
   Serial.begin(9600);             // Define baud rate
-  I2CMux.begin(Wire);             // TwoWire isntance can be passed here as 3rd argument
+  I2CMux.begin(Wire);             // TwoWire instance can be passed here as well
 
   I2CMux.closeAll();              // Set a base state which we know (also the default state on power on)
 }
@@ -22,7 +22,7 @@ void loop()
     
     delay(500);
 
-    Serial.print("Reigster = Value: ");
+    Serial.print("Register = Value: ");
     Serial.println(I2CMux.readRegister());   // Note here, register does not translate directly to channel number
 
     delay(500);  
@@ -45,7 +45,7 @@ void loop()
 
     delay(500);
 
-    Serial.print("Reigster = Value: ");
+    Serial.print("Register = Value: ");
     Serial.println(I2CMux.readRegister());
 
     delay(500);
