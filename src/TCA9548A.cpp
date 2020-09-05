@@ -81,7 +81,7 @@ void TCA9548A::write(uint8_t inData)
 uint8_t TCA9548A::read()
 {
     uint8_t buff = 0;
-    this->myWire->requestFrom(this->_address, 1, true);
+    this->myWire->requestFrom((uint16_t)this->_address, (uint8_t)1, true);
 
     if(!this->myWire->available())
         return 255;
