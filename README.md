@@ -1,5 +1,5 @@
 # TCA9548A
-![Version](https://img.shields.io/badge/Version-v1.1.0-green.svg)
+![Version](https://img.shields.io/badge/Version-v1.1.1-green.svg)
 
 A library for the TCA9548A I2C multiplexer, for devices using the Arduino framework.
 
