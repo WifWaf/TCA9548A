@@ -1,11 +1,4 @@
-/****************************************************** 
-  Arduino library for TCA9548A I2C Multiplexer
-  
-  Author: Jonathan Dempsey JDWifWaf@gmail.com  
-  Version: 1.0.0
-  License: Apache 2.0
- *******************************************************/
-
+/*   Version: 1.0.1  |  License: Apache 2.0  |  Author: JDWifWaf@gmail.com   */
 #include "TCA9548A.h"
 
 #define DEBUG 0  // Enable Debug Mode
