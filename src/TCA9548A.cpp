@@ -1,4 +1,4 @@
-/*   Version: 1.0.1  |  License: Apache 2.0  |  Author: JDWifWaf@gmail.com   */
+/*   Version: 1.1.3  |  License: Apache 2.0  |  Author: JDWifWaf@gmail.com   */
 #include "TCA9548A.h"
 
 #define DEBUG 0  // Enable Debug Mode
